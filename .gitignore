@@ -1,0 +1,14 @@
+#ignore
+Makefile
+*.pro.user
+*.Debug
+*.Release
+ui_mainwindow.h
+
+/bin
+/form
+/obj
+/moc
+/debug
+/release
+
