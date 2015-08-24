@@ -19,27 +19,20 @@ class MyItem : public QGraphicsItem
 {
 
 public:
-    MyItem(double radius);
+    MyItem(double radius, double Radius);
     ~MyItem();
     QRectF boundingRect() const;
     void paint(QPainter *painter,const QStyleOptionGraphicsItem *option,QWidget *widget);
-    //bool getColorFlag();
-    //void setColorFlag(bool flag);
 
 protected:
-    //void mousePressEvent(QGraphicsSceneMouseEvent *event);
-    void mouseMoveEvent(QGraphicsSceneMouseEvent *event);
     void mouseReleaseEvent(QGraphicsSceneMouseEvent *event);
-    //void dragEnterEvent(QGraphicsSceneDragDropEvent *event);
-    //virtual QVariant itemChange(GraphicsItemChange change, const QVariant &value);
     void mouseDoubleClickEvent (QGraphicsSceneMouseEvent *event);
+
 private:
-
-    //QPainter *m_painter;
-    //int m_x, m_y;
     double m_radius;
+    double m_Radius;
 
-    bool m_colorFlag;//true:blue, flase:black
+    bool m_colorFlag;//true:red, flase:black
 
 };
 
